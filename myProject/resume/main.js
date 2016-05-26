@@ -20,5 +20,6 @@ require([
 	"../resume/myPlugin/my-file-upload",
 	"../resume/controller/MainCtrl"
 	],function(){
+		alert(1);
 		angular.bootstrap(document, ['demoApp']);
 	});
