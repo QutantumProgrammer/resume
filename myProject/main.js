@@ -13,7 +13,7 @@ require.config({
 		}
 	});
 require(["angular", "angular-ui-route", "jquery","bootstrap","../my-file-upload","../MainCtrl"],function(){
-	
+	alert(1);
 	angular.bootstrap(document, ['demoApp']);
 
 	
