@@ -5,6 +5,24 @@
     <title>resume</title>
     <link href="../css/bootstrap3.3.5/css/bootstrap.css" rel="stylesheet">
     <link href="../css/resume.css" rel="stylesheet">
+    <script type="text/javascript" src="require.js"></script>
+    <script type="text/javascript" >
+
+		require.config({
+			paths:{
+				"path1":["module1"],
+				"jquery":["http://static.bacic5i5j.com/cdn/lib/jquery/jquery-2.1.4.min","js/jquery"]
+			}
+		});
+
+		require(["test","path1","jquery"],function(){
+			$(function(){
+				alert("inject test");  
+   			 })
+    		alert("load finished");
+    		console.log($("#top"));
+		});
+	</script>
 </head>
 <body>
 <!-- back-->
@@ -361,5 +379,4 @@
 </div>
 
 </body>
-<script data-main="main.js" src="../js/require.js"></script>
 </html>
